@@ -13,7 +13,7 @@ if [[ ! -f /usr/bin/xclip ]]; then
 	exit 1
 fi
 
-rm /tmp/go.sum || true
+rm -f /tmp/go.sum || true
 
 wget -c ${1} -P /tmp > /dev/null 2>&1
 
