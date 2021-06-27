@@ -28,3 +28,5 @@ cat /tmp/go.sum \
 	| cut -d " " -f 1,2 | \
 	xargs -i echo \"{}\" |
 	xclip  -sel clip
+	
+echo "lines found: " $(cat /tmp/go.sum | wc -l)
